@@ -1,0 +1,43 @@
+.shooting-star{
+    width: 8px;
+    height: 8px;
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+.shooting-star::before{
+    position: absolute;
+    content: " ";
+    width: 100px;
+    height: 4px;
+    top: 50%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, aliceblue, transparent);
+    transform: translateY(-50%);
+}
+
+.shooting-star:nth-child(1){
+    top: 10px;
+}
+
+.shooting-star:nth-child(2){
+    top: 100px;
+}
+
+.shooting-star:nth-child(3){
+    top: 200px;
+}
+
+.shooting-star:nth-child(4){
+    top: 300px;
+}
+
+.shooting-star:nth-child(5){
+    top: 400px;
+}
