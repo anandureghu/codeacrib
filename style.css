@@ -12,4 +12,5 @@ background: -webkit-linear-gradient(0deg, #243B55, #141E30);
 background: linear-gradient(0deg, #243B55, #141E30); 
 
 position: relative;
+overflow: hidden;
 }
