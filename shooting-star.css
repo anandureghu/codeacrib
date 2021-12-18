@@ -1,71 +1,74 @@
-.sky{
-    width: 100vw;
-    height: 50vh;
-    overflow-x: hidden;
-    /* background-color: aliceblue; */
+.sky {
+  width: 100vw;
+  height: 50vh;
+  overflow-x: hidden;
+  /* background-color: aliceblue; */
 }
 
-.shooting-star{
-    width: 8px;
-    height: 8px;
-    background-color: aliceblue;
-    position: absolute;
-    border-radius: 50%;
-    top: 50%;
-    left: 130%;
-    /* transform: rotate(315deg); */
-    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.8);
-    /* position: relative; */
-    animation: 3s infinite shooting-star ;
+.shooting-star {
+  width: 8px;
+  height: 8px;
+  background-color: aliceblue;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 130%;
+  /* transform: rotate(315deg); */
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.8);
+  /* position: relative; */
+  animation: shooting-star 5s infinite 5s;
 }
 
 @keyframes shooting-star {
-    0%{
-        top: 100px;
-        left: 0px;
-    }
+  0% {
+    top: 100px;
+    left: -100px;
+    opacity: 1;
+  }
 
-    50%{
-        top: 30px;
-    }
-
-    100%{
-        top: 100px;
-        right: -100px;
-    }
-}
-
-.shooting-star::before{
-    position: absolute;
-    content: " ";
-    width: 100px;
-    height: 4px;
-    border-radius: 10px;
-    background: linear-gradient(90deg, aliceblue, transparent);
-    transform: rotate(160deg) translate(95px, 15px)
-}
-
-.shooting-star:nth-child(1){
-    animation-delay: 0.2s;
-    top: 10px;
-}
-
-.shooting-star:nth-child(2){
-    animation-delay: 0.5s;
-    top: 20px;
-}
-
-.shooting-star:nth-child(3){
-    animation-delay: 0.8s;
+  50% {
     top: 30px;
+  }
+
+  100% {
+    top: 100px;
+    right: -100px;
+    opacity: 0.3;
+    transform: scale(0.1);
+  }
 }
 
-.shooting-star:nth-child(4){
-    animation-delay: 0.3s;
-    top: 40px;
+.shooting-star::before {
+  position: absolute;
+  content: " ";
+  width: 100px;
+  height: 4px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, aliceblue, transparent);
+  transform: rotate(160deg) translate(95px, 15px);
 }
 
-.shooting-star:nth-child(5){
-    animation-delay: 0.6s;
-    top: 50px;
+.shooting-star:nth-child(1) {
+  animation-delay: 5.2s;
+  top: 10px;
+}
+
+.shooting-star:nth-child(2) {
+  animation-delay: 5.5s;
+  top: 20px;
+}
+
+.shooting-star:nth-child(3) {
+  animation-delay: 5.8s;
+  top: 30px;
+}
+
+.shooting-star:nth-child(4) {
+  animation-delay: 5.3s;
+  top: 40px;
+}
+
+.shooting-star:nth-child(5) {
+  animation-delay: 5.6s;
+  top: 50px;
 }

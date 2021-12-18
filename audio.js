@@ -1,12 +1,15 @@
 // Playing audio
 const audio = new Audio("merry-christmas.mp3");
 
-// Play Music on click
-container.addEventListener("click", e => {
-    audio.play();
-});
-
-//  pause music on double click
-container.addEventListener("dblclick", e => {
-    audio.pause();
-});
+let audioCount = 0;
+// Play Music on spacebar click
+document.body.onkeyup = function (e) {
+  if (e.keyCode == 32) {
+    audioCount += 1;
+    if (audioCount % 2 === 0) {
+      audio.pause();
+    } else {
+      audio.play();
+    }
+  }
+};
