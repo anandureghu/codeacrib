@@ -1,0 +1,27 @@
+.round-mountain {
+  width: 50vw;
+  height: 150px;
+  background-color: black;
+  position: absolute;
+  z-index: 10;
+}
+
+.round-mountain-right {
+  bottom: 100px;
+  left: 50%;
+  border-radius: 100% 0% 0% 0% / 100% 0% 0% 0%;
+
+  background: #000046;
+  background: -webkit-linear-gradient(20deg, #1cb5e0, #000046);
+  background: linear-gradient(20deg, #1cb5e0, #000046);
+}
+
+.round-mountain-left {
+  bottom: 100px;
+  left: 0;
+  border-radius: 0% 100% 0% 0% / 0% 100% 0% 0%;
+
+  background: #000046;
+  background: -webkit-linear-gradient(-20deg, #1cb5e0, #000046);
+  background: linear-gradient(-20deg, #1cb5e0, #000046);
+}
