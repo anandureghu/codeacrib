@@ -29,7 +29,7 @@
 .tree1 {
   position: absolute;
   bottom: 70px;
-  right: 50px;
+  right: 1%;
   z-index: 10;
 }
 
@@ -37,5 +37,5 @@
   position: absolute;
   bottom: 70px;
   z-index: 10;
-  left: 50px;
+  left: 1%;
 }

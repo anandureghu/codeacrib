@@ -1,0 +1,53 @@
+.crib{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    z-index: 15;
+    transform: translateX(-50%);
+}
+
+.crib-body{
+    position: relative;
+}
+
+.crib-stand{
+    width: 20px;
+    height: 180px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+.crib-stand-1{
+    left: -160px;
+}
+
+.crib-stand-2{
+    left: 140px;
+}
+
+.crib-top{
+    position: absolute;
+    background-color: black;
+    width: 220px;
+    height: 20px;
+    bottom: 190px;
+    z-index: 1;
+}
+
+.crib-top-1{
+    left: -10px;
+    transform: rotate(20deg);
+}
+
+.crib-top-2{
+    left: -210px;
+    transform: rotate(-20deg);
+}
+
+.ishow{
+    position: absolute;
+    bottom: -80px;
+    left: -295px;
+    z-index: 2;
+}
