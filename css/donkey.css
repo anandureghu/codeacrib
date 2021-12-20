@@ -1,0 +1,49 @@
+.donkey{
+    position: absolute;
+    left: 20%;
+    z-index: 10;
+    bottom: 45px;
+}
+
+.donkeybody{
+    position: relative;
+}
+
+.donkey{
+    position: absolute;
+    width: 180px;
+}
+
+.donkey-head{
+    bottom: 80px;
+    left: 100px;
+    animation: donkey 3s linear infinite;
+}
+
+.donkey-tail{
+    bottom: 45px;
+    left: -45px;
+    animation: donkey 3s linear infinite;
+    animation-delay: 0.3s;
+}
+
+
+
+@keyframes donkey {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(-0deg);
+    }
+    75%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

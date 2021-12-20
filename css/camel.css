@@ -1,0 +1,42 @@
+.camel{
+    position: absolute;
+    bottom: 220px;
+    width: 180px;
+    opacity: 0.7;
+    animation: camel 6s linear infinite;
+    animation-delay: 0.2s;
+}
+
+.camel-2{
+    bottom: 210px;
+    left: 120px;
+    transform: rotate(0deg);
+    animation-delay: 0.9s;
+}
+
+.camel-3{
+    bottom: 190px;
+    left: 240px;
+    transform: rotate(3deg);
+    animation-delay: 0.7s;
+}
+
+
+@keyframes camel {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(-2deg);
+    }
+    50%{
+        transform: rotate(-0deg);
+    }
+    75%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

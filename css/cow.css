@@ -1,0 +1,48 @@
+.cow{
+    position: absolute;
+    left: 60%;
+    z-index: 10;
+    bottom: 25px;
+}
+
+.cowbody{
+    position: relative;
+}
+
+.cow{
+    position: absolute;
+    width: 200px;
+}
+
+.cow-head{
+    bottom: 48px;
+    left: 68px;
+    animation: cow 3s linear infinite;
+}
+
+.cow-tail{
+    bottom: 30px;
+    left: 193px;
+    animation: cow 3s linear infinite;
+}
+
+
+
+@keyframes cow {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(-0deg);
+    }
+    75%{
+        transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

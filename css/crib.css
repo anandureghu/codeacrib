@@ -46,8 +46,9 @@
 }
 
 .ishow{
+    width: 200px;
     position: absolute;
-    bottom: -80px;
-    left: -295px;
+    bottom: -8px;
+    left: -90px;
     z-index: 2;
 }

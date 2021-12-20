@@ -1,0 +1,65 @@
+.tree1{
+    position: absolute;
+    bottom: 70px;
+    left: 70%;
+    z-index: 10;
+}
+
+.tree2{
+    position: absolute;
+    bottom: 70px;
+    left: 2%;
+    z-index: 10;
+}
+
+.tree1body, .tree2body{
+    position: relative;
+}
+
+.tree1-body, .tree2-body{
+    position: absolute;
+    bottom: 0;
+}
+
+.tree1-head-1{
+    position: absolute;
+    bottom: 20px;
+    left: -65px;
+    animation: wind 8s linear infinite;
+}
+
+.tree1-head-2{
+    position: absolute;
+    bottom: -20px;
+    left: 140px;
+    animation: wind 4s linear infinite;
+}
+
+.tree2-head{
+    position: absolute;
+    bottom: 55px;
+    left: 0px;
+
+    animation: wind 6s linear infinite;
+}
+
+@keyframes wind {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(-2deg);
+    }
+    50%{
+        transform: rotate(-0deg);
+    }
+    75%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+

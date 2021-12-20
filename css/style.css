@@ -26,11 +26,13 @@
   z-index: 90;
 }
 
-.tree1 {
+/* .tree1 {
   position: absolute;
   bottom: 70px;
   right: 1%;
   z-index: 10;
+  animation: wind-small 3s linear infinite;
+  animation-delay: 0.2s;
 }
 
 .tree2 {
@@ -38,4 +40,73 @@
   bottom: 70px;
   z-index: 10;
   left: 1%;
+  animation: wind 3s linear infinite;
+} */
+
+@keyframes wind {
+    0%{
+      transform: rotate(0deg);
+    }
+
+    25%{
+      transform: rotate(0.5deg);
+    }
+
+    50%{
+      transform: rotate(0deg);
+    }
+
+    75%{
+      transform: rotate(-0.5deg);
+    }
+
+    100%{
+      transform: rotate(0deg);
+    }
+
+}
+
+@keyframes wind-small {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  25%{
+    transform: rotate(0.8deg);
+  }
+
+  50%{
+    transform: rotate(0deg);
+  }
+
+  75%{
+    transform: rotate(-0.8deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+  }
+
+}
+
+.aura{
+  position: absolute;
+  bottom: 100px;
+  width: 100px;
+  left: 50%;
+  z-index: 10;
+  opacity: 0.8;
+  animation: aura 10s linear infinite;
+  box-shadow: 0px 0px 40px 10px rgba(21,142,190, 0.3);
+
+  /* transition: all 1s ease-in; */
+}
+
+@keyframes aura {
+  from{
+    transform: translateX(-40%) rotate(0deg);
+  }
+  to{
+    transform: translateX(-40%) rotate(360deg);
+  }
 }
