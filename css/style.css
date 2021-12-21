@@ -97,9 +97,6 @@
   z-index: 10;
   opacity: 0.8;
   animation: aura 10s linear infinite;
-  box-shadow: 0px 0px 40px 10px rgba(21,142,190, 0.3);
-
-  /* transition: all 1s ease-in; */
 }
 
 @keyframes aura {
@@ -109,4 +106,14 @@
   to{
     transform: translateX(-40%) rotate(360deg);
   }
+}
+
+
+.star-img{
+  position: absolute;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  top: 30px;
+  transform: translateX(-50px);
 }
